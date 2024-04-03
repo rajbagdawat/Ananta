@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ananta1"
+
+                    />
+                <LinearLayout
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Ananta"
+                        android:textColor="#EB1B1A1A"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText"></TextView>
+
+                    <TextView
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="सनातन धर्म का प्रसार"
+                        android:textColor="#303030"
+                        android:textSize="@dimen/_13ssp"
+                        tools:ignore="HardcodedText,RtlHardcoded"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end">
+                    <ImageView
+                        android:id="@+id/Likedicon"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_11sdp"
+                        android:src="@drawable/fav">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/notification"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/notification2">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notification_Recycleview_Main"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/notificationmain_layout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</FrameLayout>

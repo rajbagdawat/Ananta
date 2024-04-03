@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/heart_img"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:alpha="0"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avd_instagram_like"
+        tools:ignore="ContentDescription,UnusedAttribute" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:cardBackgroundColor="#D9FFFCF3"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#D9FFFCF3"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/_5sdp"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:id="@+id/storyactivering"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:elevation="@dimen/_1sdp"
+                                android:src="@drawable/ananta_circle"
+                                tools:ignore="ContentDescription">
+
+                            </ImageView>
+
+                            <ImageView
+                                android:id="@+id/storyinactivering"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:src="@drawable/circleinactive1"
+                                tools:ignore="ContentDescription">
+
+                            </ImageView>
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/storyprofile"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ananta1"
+                                tools:ignore="MissingConstraints" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/anantaporfilestoryname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:gravity="center"
+                                android:text="Ananta"
+                                android:textColor="#303030"
+                                android:textSize="@dimen/_9ssp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:id="@+id/anantaporfilestorytopic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:text="त्रिदेव में से सबसे शक्तिशाली कौन है ? "
+                                android:textColor="#79303030"
+                                android:textSize="@dimen/_9ssp"
+                                android:textStyle="bold"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/layoutcomponent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="#D9FFFCF3"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/anantacomponentphoto_viewpager"
+                                android:layout_width="@dimen/_270sdp"
+                                android:layout_height="@dimen/_350sdp"
+                                android:orientation="horizontal"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dotsContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_8sdp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="#D9FFFCF3"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:gravity="start"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <CheckBox
+                                        android:id="@+id/anatalikepostimageView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:button="@drawable/checkbox_anatapostdesign"
+                                        android:scaleX="1.20"
+                                        android:scaleY="1.20"
+                                        app:useMaterialThemeColors="false"
+                                        tools:ignore="MissingConstraints"></CheckBox>
+
+                                    <TextView
+                                        android:id="@+id/anatalikeposttextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Likes"
+                                        android:textColor="#535151"
+                                        android:textSize="@dimen/_8sdp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <ImageView
+                                        android:id="@+id/anatacommmentpostimageView"
+                                        android:layout_width="45sp"
+                                        android:layout_height="48dp"
+                                        android:padding="9dp"
+                                        android:src="@drawable/comment2"
+                                        android:tint="#535151"
+                                        tools:ignore="MissingConstraints"></ImageView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="comment"
+                                        android:textColor="#535151"
+                                        android:textSize="@dimen/_8sdp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <ImageView
+                                        android:id="@+id/anatasharepostimageView"
+                                        android:layout_width="45sp"
+                                        android:layout_height="48dp"
+                                        android:padding="@dimen/_7sdp"
+                                        android:src="@drawable/send1"
+                                        android:tint="#535151"
+                                        tools:ignore="MissingConstraints"></ImageView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="share"
+                                        android:textColor="#535151"
+                                        android:textSize="@dimen/_8sdp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+
+                                        <ImageView
+                                            android:id="@+id/anatasavedpostimageView"
+                                            android:layout_width="45sp"
+                                            android:layout_height="48dp"
+                                            android:padding="@dimen/_8sdp"
+                                            android:src="@drawable/saved"
+                                            android:tint="#535151"
+                                            tools:ignore="MissingConstraints"></ImageView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Saved"
+                                            android:textColor="#535151"
+                                            android:textSize="@dimen/_8sdp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

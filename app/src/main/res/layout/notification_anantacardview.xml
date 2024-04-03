@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:cardCornerRadius="10dp"
+       app:cardBackgroundColor="#D9FFFCF3"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp"
+            android:background="#D9FFFCF3"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/notification_unread_dot"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:padding="@dimen/_2sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/red"/>
+            <TextView
+                android:id="@+id/notification_message"
+                android:layout_width="@dimen/_210sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_height="match_parent"
+                android:text="भगवत गीता संस्करण गीता प्रेस अपलोड किया गया है"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:maxLength="150"
+                android:textColor="#E1000000"
+                android:textSize="@dimen/_10sdp"
+                />
+            <TextView
+                android:id="@+id/notification_time_date"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_height="match_parent"
+                android:text="04:45 PM"
+                android:gravity="center"
+                android:textColor="#9C000000"
+                android:textSize="@dimen/_7sdp"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

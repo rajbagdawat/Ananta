@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "478681472831",
+    "project_id": "ananta-f1ec0",
+    "storage_bucket": "ananta-f1ec0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478681472831:android:3ece8e73464cc2f8eb3d8a",
+        "android_client_info": {
+          "package_name": "com.shiva.ananta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABbDK8cKVWyAqujPJkrUrVhMeq7b7RgEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

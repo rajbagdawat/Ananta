@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FDF9ED"
+    android:orientation="vertical"
+    tools:context=".LikedFragment">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout29"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="MissingConstraints,UseCompoundDrawables">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/_50sdp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:onClick="back"-->
+<!--            android:paddingTop="19dp"-->
+<!--            android:paddingBottom="18dp"-->
+<!--            android:src="@drawable/back"-->
+<!--            tools:ignore="ContentDescription,UsingOnClickInXml"></ImageView>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="157dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="My Wishlist"-->
+<!--            android:textColor="#222222"-->
+<!--            android:textSize="@dimen/_18ssp"-->
+<!--            android:textStyle="bold"-->
+<!--            tools:ignore="InefficientWeight"></TextView>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        android:layout_marginBottom="@dimen/_5sdp"-->
+<!--        tools:ignore="RtlHardcoded,RtlSymmetry,UselessLeaf">-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/librarybooksliked_recycle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:listitem="@layout/libraryliked_component"-->
+<!--            ></androidx.recyclerview.widget.RecyclerView>-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

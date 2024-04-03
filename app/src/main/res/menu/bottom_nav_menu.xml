@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/home_menu"
+        android:enabled="true"
+        android:icon="@drawable/homeaanata"
+        android:title="Home"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/library_menu"
+        android:enabled="true"
+        android:icon="@drawable/library"
+        android:title="Library"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/ananta_menu"
+        android:enabled="true"
+        android:icon="@drawable/anantahome"
+        android:title="Ananta"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/reels_menu"
+        android:enabled="true"
+        android:icon="@drawable/reels"
+        android:title="Videos"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/profile_menu"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="Profile"
+        tools:ignore="HardcodedText" />
+
+</menu>

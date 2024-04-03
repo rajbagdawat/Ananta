@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_5sdp"
+        tools:ignore="UselessParent">
+        
+        <ImageView
+            android:id="@+id/storyactivering"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ananta_circle"
+            android:elevation="@dimen/_1sdp"
+            tools:ignore="ContentDescription">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/storyinactivering"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/circleinactive1"
+            tools:ignore="ContentDescription">
+
+        </ImageView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/storyprofile"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ananta1"
+        tools:ignore="MissingConstraints" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/storyname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ananta"
+        android:gravity="center"
+        android:textColor="#303030"
+        android:textSize="@dimen/_9ssp"
+        android:textStyle="bold"></TextView>
+</LinearLayout>
